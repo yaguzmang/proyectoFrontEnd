@@ -19,7 +19,7 @@ def temperatures(request):
             temperature_json  = response.json()
 
     # Realiza una petición GET al Web Services
-    response = requests.get('http://127.0.0.1:8000/temperatures/')
+    response = requests.get('http://pi1-eafit-yaguzmang.azurewebsites.net/temperatures/')
     # Convierte la respuesta en JSON
     temperatures = response.json()
     # Rederiza la respuesta en el template measure
