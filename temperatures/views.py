@@ -14,7 +14,7 @@ def temperatures(request):
             # Crea el json para realizar la petición POST al Web Service
             args = {'fecha': fecha, 'origen': origen, 'valor': valor, 'codigos': codigos, 'observacion': observacion}
             print(args)
-            response = requests.post('http://127.0.0.1:8000/temperatures/', args)
+            response = requests.post('http://pi1-eafit-yaguzmang.azurewebsites.net/temperatures/', args)
             # Convierte la respuesta en JSON
             temperature_json  = response.json()
 
